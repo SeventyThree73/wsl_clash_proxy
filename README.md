@@ -7,18 +7,6 @@
 ```
 cd ~
 ```
-- 创建文件 `.wslconfig`
-```
-[wsl2]
-nestedVirtualization=true
-ipv6=true
-[experimental]
-autoMemoryReclaim=gradual # gradual | dropcache | disabled
-networkingMode=mirrored
-dnsTunneling=true
-firewall=true
-autoProxy=true
-```
 - 创建文件`.proxyrc`
 ```
 #!/bin/bash
