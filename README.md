@@ -1,8 +1,20 @@
 在适用于Linux 的Windows 子系统中通过clash配置代理
 # wsl_clash_proxy
-1 打开clash for windows 的allow lan 开关
-2 运行`cd ~`回到主目录
-3 建立文件`.proxyrc`
+# 1 打开clash for windows 的allow lan 开关
+# 2 运行`cd ~`回到主目录
+# 3 建立文件 `.wslconfig`
+```
+[wsl2]
+nestedVirtualization=true
+ipv6=true
+[experimental]
+autoMemoryReclaim=gradual # gradual | dropcache | disabled
+networkingMode=mirrored
+dnsTunneling=true
+firewall=true
+autoProxy=true
+```
+# 4 建立文件`.proxyrc`
 写入
 ```
 #!/bin/bash
