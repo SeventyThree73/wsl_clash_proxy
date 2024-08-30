@@ -4,7 +4,6 @@
 ![image](https://github.com/user-attachments/assets/2fd37a06-3335-485f-a255-a8990bd35431)
 
 - 回到主目录
-运行
 ```
 cd ~
 ```
@@ -21,7 +20,6 @@ firewall=true
 autoProxy=true
 ```
 - 创建文件`.proxyrc`
-写入
 ```
 #!/bin/bash
 hostip=$(ip route | grep default | awk '{print $3}')
@@ -34,8 +32,7 @@ chmod 755 .proxyrc
 ```
 - 启动代理
 `source ~/.proxyrc`
--  开机启动代理(可选)
-  打开文件`~/.bashrc`，在后面添加
+-  (可选,开机启动代理)打开文件`~/.bashrc`，在后面添加
 ```
 if [ -f ~/.proxyrc ]; then
     source ~/.proxyrc
