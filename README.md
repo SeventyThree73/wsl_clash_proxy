@@ -1,6 +1,8 @@
 # wsl_clash_proxy
 在适用于Linux 的Windows 子系统中通过clash配置代理
-- 打开clash for windows 的allow lan 开关
+- 打开Clash for Windows 的Allow LAN 开关
+- ![image](https://github.com/user-attachments/assets/2fd37a06-3335-485f-a255-a8990bd35431)
+
 - 回到主目录
 运行
 ```
